@@ -125,7 +125,7 @@
 
 		 /* Vertical rhythm */
 		 main * + * {
-		   margin-block-start: var(--line-h);
+		   margin-block-start: calc(var(--line-h)*2);
 		 }
 		 li, dt, dd, br, th, td {
 		   margin-block-start: 0;
@@ -436,7 +436,7 @@ hr {
 }
 
 .cta {
-  margin-block-start: calc(var(--line-h)*2);
+  margin-block: calc(var(--line-h)*2);
   background-color: var(--accent);
   border: 0.1em  solid var(--accent);
 }
@@ -492,4 +492,18 @@ hr {
 *************************************************************************** */
 
 /* Site specific */
+
+
+.section1 .bg-image {
+  background-image: url('./images/desktop-image-hero-2.jpg');
+}
+
+.section1, .section2, aside {
+  align-items: initial;
+}
+
+.section2 .bg-image {
+  background-image: url('./images/desktop-image-hero-3.jpg');
+}
+
 
