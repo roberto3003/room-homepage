@@ -124,12 +124,11 @@
 		 }
 
 		 /* Vertical rhythm */
-		 
-main {
-  margin-block: calc(var(--line-h)*4);
-}
 
-		 /* main * + * { */
+		 main {
+		   margin-block: calc(var(--line-h)*4);
+		 }
+
 		 main > *:not(p) {
 		   margin-block: calc(var(--line-h)*2);
 		 }
@@ -355,7 +354,6 @@ hr {
   display: flex;
   gap: var(--gap);
   flex-wrap: wrap;
-  align-items: baseline;
 }
 
 .column {
