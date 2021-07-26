@@ -323,11 +323,11 @@ hr {
 
 
 .hero {
-  background-image: url('./images/hero-desktop.jpg');
+  background-image: url('./images/desktop-image-hero-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  min-height:33vh;
+  min-height: calc(var(--line-h)*20);
   min-width: 300px;
 }
 
@@ -436,6 +436,7 @@ hr {
 }
 
 .cta {
+  margin-block-start: calc(var(--line-h)*2);
   background-color: var(--accent);
   border: 0.1em  solid var(--accent);
 }
@@ -456,7 +457,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  min-height: 50vh;
+  min-height: calc(var(--line-h)*20);
 }
 
 .footer {
@@ -482,9 +483,10 @@ hr {
   overflow: hidden;
 }
 
-.social svg:hover {
+.social svg:hover, .links svg:hover:not(.main-page) {
   fill: var(--accent);
 }
+
 
 /* **************************************************************************
 *************************************************************************** */
