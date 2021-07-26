@@ -124,8 +124,14 @@
 		 }
 
 		 /* Vertical rhythm */
-		 main * + * {
-		   margin-block-start: calc(var(--line-h)*2);
+		 
+main {
+  margin-block: calc(var(--line-h)*4);
+}
+
+		 /* main * + * { */
+		 main > *:not(p) {
+		   margin-block: calc(var(--line-h)*2);
 		 }
 		 li, dt, dd, br, th, td {
 		   margin-block-start: 0;
@@ -498,7 +504,7 @@ hr {
   background-image: url('./images/desktop-image-hero-2.jpg');
 }
 
-.section1, .section2, aside {
+.section1, .section2, aside .flex {
   align-items: initial;
 }
 
@@ -506,4 +512,11 @@ hr {
   background-image: url('./images/desktop-image-hero-3.jpg');
 }
 
+.bg-img-1 {
+  background-image: url('./images/image-about-dark.jpg');
+}
 
+
+.bg-img-2 {
+  background-image: url('./images/image-about-light.jpg');
+}
